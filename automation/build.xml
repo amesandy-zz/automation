@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="rn">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+        <pathelement location="../../.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+        <pathelement location="../../.m2/repository/io/appium/java-client/4.1.2/java-client-4.1.2.jar"/>
+        <pathelement location="../../.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar"/>
+        <pathelement location="../../.m2/repository/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar"/>
+        <pathelement location="../../.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar"/>
+        <pathelement location="../../.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar"/>
+        <pathelement location="../../.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+        <pathelement location="../../.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar"/>
+        <pathelement location="../../.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar"/>
+        <pathelement location="../../.m2/repository/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar"/>
+        <pathelement location="../../.m2/repository/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar"/>
+        <pathelement location="../../.m2/repository/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar"/>
+        <pathelement location="../../.m2/repository/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar"/>
+        <pathelement location="../../.m2/repository/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-java/3.4.0/selenium-java-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.4.0/selenium-chrome-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.4.0/selenium-edge-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.4.0/selenium-firefox-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.4.0/selenium-ie-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.4.0/selenium-opera-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.4.0/selenium-remote-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.4.0/selenium-safari-driver-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-support/3.4.0/selenium-support-3.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="../../.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="../../.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar"/>
+        <pathelement location="../../.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="../../.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/cssparser/cssparser/0.9.22/cssparser-0.9.22.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/htmlunit/htmlunit/2.26/htmlunit-2.26.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.26/htmlunit-core-js-2.26.jar"/>
+        <pathelement location="../../.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.25/neko-htmlunit-2.25.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-io/9.4.1.v20170120/jetty-io-9.4.1.v20170120.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-util/9.4.1.v20170120/jetty-util-9.4.1.v20170120.jar"/>
+        <pathelement location="../../.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+        <pathelement location="../../.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+        <pathelement location="../../.m2/repository/com/codeborne/phantomjsdriver/1.4.0/phantomjsdriver-1.4.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.26/htmlunit-driver-2.26.jar"/>
+        <pathelement location="../../.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.3.v20170317/websocket-api-9.4.3.v20170317.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.3.v20170317/websocket-client-9.4.3.v20170317.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-client/9.4.3.v20170317/jetty-client-9.4.3.v20170317.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/jetty-http/9.4.3.v20170317/jetty-http-9.4.3.v20170317.jar"/>
+        <pathelement location="../../.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.3.v20170317/websocket-common-9.4.3.v20170317.jar"/>
+        <pathelement location="../../.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar"/>
+        <pathelement location="../../.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar"/>
+        <pathelement location="../../.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="../../.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="../../.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar"/>
+    </path>
+    <path id="rn.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Utility.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.desiredcapab.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Server.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Test.test.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.App.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Test.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.UITest.classpath">
+        <path refid="rn.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <classpath refid="rn.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <classpath refid="rn.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="Utility">
+        <java classname="com.reuters.rnews.rn.Utility" failonerror="true" fork="yes">
+            <classpath refid="run.Utility.classpath"/>
+        </java>
+    </target>
+    <target name="desiredcapab">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.reuters.rnews.rn.desiredcapab" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.desiredcapab.classpath"/>
+        </junit>
+    </target>
+    <target name="Server">
+        <java classname="com.reuters.rnews.rn.Server" failonerror="true" fork="yes">
+            <env key="ANDROID_HOME" value="/Users/sandramercado/Library/Android/sdk"/>
+            <classpath refid="run.Server.classpath"/>
+        </java>
+    </target>
+    <target name="Test.test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.reuters.rnews.rn.Test" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.Test.test.classpath"/>
+        </junit>
+    </target>
+    <target name="App">
+        <java classname="com.reuters.rnews.rn.App" failonerror="true" fork="yes">
+            <classpath refid="run.App.classpath"/>
+        </java>
+    </target>
+    <target name="Test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.reuters.rnews.rn.Test" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.Test.classpath"/>
+        </junit>
+    </target>
+    <target name="UITest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.reuters.rnews.rn.UITest" todir="${junit.output.dir}"/>
+            <env key="ANDROID_HOME" value="/Users/sandramercado/Library/Android/sdk"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.UITest.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
